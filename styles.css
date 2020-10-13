@@ -4,11 +4,18 @@
   /* Primary */
   --Very-Dark-Magenta: hsl(300, 43%, 22%);
   --Soft-Pink: hsl(333, 80%, 67%);
+  --Very-light-Magenta: #a2578c;
 
   /* Neutral */
   --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
   --Light-Grayish-Magenta: hsl(300, 24%, 96%);
   --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -17,16 +24,45 @@ body {
 }
 
 .container {
-  padding: 6rem 6rem;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .products {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 80px 0;
+
 }
 
 .usersLove {
-  max-width: 40%;
+  max-width: 40ch;
+}
+
+h1 {
+  margin-bottom: 20px !important;
+}
+
+
+.starts p {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.reviews {
+  padding: 15px;
+  background-color: var(--Light-Grayish-Magenta);
+  margin: 8px 10px;
+  border-radius: 8px;
+}
+
+.reviewFirts {
+  margin-right: 70px;
+}
+
+.reviewSecond {
+  margin-right: 50px;
 }
 
 .usersLove p {
@@ -37,4 +73,44 @@ h1 {
   font-size: 50px;
   color: var(--Very-Dark-Magenta);
   margin: 0;
+}
+
+/* Second Section */
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.box-user {
+  background-color: var(--Very-Dark-Magenta);
+  max-width: 30%;
+  padding: 42px;
+  border-radius: 10px;
+  line-height: 23px;
+  max-height: 265px;
+}
+
+.box-user > p {
+  color: var(--White);
+  margin-top: 40px;
+}
+
+.box-header {
+  display: flex;
+  align-items: center;
+}
+
+.box-header img {
+  border-radius: 50%;
+  max-width: 3rem;
+  margin-right: 20px;
+}
+
+.name-user {
+  color: var(--White);
+}
+
+.verified {
+  color: var(--Very-light-Magenta);
 }
